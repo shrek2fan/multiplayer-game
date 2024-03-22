@@ -1,0 +1,30 @@
+/* Styling for the game board. Uses grid layout for equal spacing of slots. */
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px;
+}
+
+/* Basic styling for each slot in the game board. */
+.slot {
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Styling for player 1's pieces. */
+.player1 {
+    background-color: rgb(245, 144, 234);
+}
+
+/* Styling for player 2's pieces. */
+.player2 {
+    background-color: #c37aec;
+}
+
+.hidden {
+    display: none;
+}
